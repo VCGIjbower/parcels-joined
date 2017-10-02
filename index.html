@@ -50,7 +50,7 @@ function style(feature) {
 }
 
 var geo = L.geoJson(geocodes, {
-	filter: geocodesFilter,
+	  filter: geocodesFilter,
     style: style,
     onEachFeature: function(feature, layer) {
     	layer.bindPopup('<b>Name: </b>'+feature.properties.name+'<p><b>Geographic ID: </b>'+feature.properties.geoid.substring(7,17))
