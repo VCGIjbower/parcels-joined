@@ -53,7 +53,7 @@ var geo = L.geoJson(geocodes, {
 	  filter: geocodesFilter,
     style: style,
     onEachFeature: function(feature, layer) {
-    	layer.bindPopup('<b>Name: </b>'+feature.properties.name+'<p><b>Geographic ID: </b>'+feature.properties.geoid.substring(7,17))
+    	  layer.bindPopup('<b>Name: </b>'+feature.properties.name+'<p><b>Geographic ID: </b>'+feature.properties.geoid.substring(7,17))
     }
 }).addTo(mymap);
 
