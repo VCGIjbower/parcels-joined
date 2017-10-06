@@ -52,13 +52,9 @@ function style(feature) {
 var geo = L.geoJson(geocodes, {
     style: style,
     onEachFeature: function(feature, layer) {
-    	  layer.bindPopup('<b>Name: </b>'+feature.properties.commcode_8+'<br/><br/><b>County: </b>'+feature.properties.commcod_14+'<br/><br/><b>Geographic ID: </b>'+feature.properties.commcod_11)
+    	  layer.bindPopup('<b>Community name: </b>'+feature.properties.commcode_8+'<br/><b>County: </b>'+feature.properties.commcod_14+'<br/><b>RPC: </b>'+feature.properties.commcode_6+'<br/><b>Geographic ID: </b>'+feature.properties.commcod_11)
     }
 }).addTo(mymap);
-
-function geocodesFilter(geocodes) {
-	if (geocodes.properties.geoid.length === 17) return true
-}
 
 </script>
 
