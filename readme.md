@@ -1,1 +1,1 @@
-This is a simple map built with Leaflet that uses Census Reporter data to display geographic codes for county subdivisions in Vermont.
+This is a simple map built with Leaflet that displays the match rate of parcels to SPANs in the Grand List based on current data.
